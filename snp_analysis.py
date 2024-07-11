@@ -11,7 +11,7 @@ from pathlib import Path
 
 print("Script started")
 
-Entrez.email = "peter.wiercioch@gmail.com"  # Always tell NCBI who you are
+Entrez.email = "name@email.com"  # Always tell NCBI who you are
 
 def read_23andme_file(file_path):
     print(f"Reading file: {file_path}")
@@ -104,8 +104,8 @@ def analyze_snps(file_path):
     print(df.head())
     return df
 
-# Set your file path here
-file_path = r"C:\Users\peter\OneDrive\Documents\__Important_Docs\Health\genome_Peter_Wiercioch_v5_Full_20211125094157.txt"
+# Set your file path here (this is where you saved the 23andme .txt file)
+file_path = r"C:\Users\%USER%\genome_name_v5_Full_date.txt"
 
 print("File path set")
 
